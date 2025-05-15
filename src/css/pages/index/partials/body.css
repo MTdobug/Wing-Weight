@@ -1,0 +1,11 @@
+
+/*estilização do body*/
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-family);
+    background-color: var(--light-blue);
+    min-height: 100vh;
+    overflow: hidden;
+}

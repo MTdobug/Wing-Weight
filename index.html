@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wing Weight</title>
+
+    <link rel="shortcut icon" type="imagex/png" href="src/assets/images/LogoWW-SearchBar.ico">
+    <link rel="stylesheet" href="src/css/pages/index/index.css">
+    <script src="https://kit.fontawesome.com/7f048de868.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--tela de carregamento da página-->
+
+    <div id="preloader">
+        <img src="src/assets/images/LogoWH.png" alt="">
+    </div>
+
+    <!-- Div para colocar a logo-->
+    <div class="logo">
+        <img src="src/assets/images/LogoWH.png" alt="">
+    </div>
+
+    <!-- Container para o conteudo-->
+    <div class="container">
+
+        <div class="form-login">
+
+            <form id="login-form" method="post" action="/login" autocomplete="on">
+
+                <div class="form-control">
+
+                    <!-- Input de usuario -->
+                    <label for="usuario"></label>
+                    <input id="usuario" type="text" placeholder="Usuário">
+                    <small id="error-usuario"></small>
+
+                </div>
+
+                <div class="form-control">
+
+                    <!-- Input para senha -->
+                    <label for="senha"></label>
+                    <div class="input-senha">
+                        <input id="senha" class="input-password" type="password" placeholder="Senha">
+                        <i id="toggle-senha" class="fa-solid fa-eye toggle-senha input-password" style="cursor: pointer;"></i>
+                    </div>
+                    <small id="error-senha"></small>
+                    
+                </div>
+            </form>
+        
+            <!-- Link de recuperação -->
+            <div id="rec-link" class="form-links">
+                <a href="">Esqueceu a senha ?</a>
+            </div>
+
+
+            <!-- Botão de submit -->
+            <div class="btn-submit">
+
+                <button type="submit" form="login-form">Entrar</button>
+
+            </div>
+
+
+            <!-- Link de Cadastro -->
+            <div id="register-link" class="form-links">
+                <a href="register.html">Cadastre-se</a>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <script type="module" src="src/js/pages/index/index.js"></script>
+</body>
+
+</html>
