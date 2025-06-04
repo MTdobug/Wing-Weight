@@ -1,0 +1,10 @@
+.logo {
+    padding-top: 5vh;
+    margin-bottom: auto;
+    justify-content: center;
+    align-self: center;
+}
+
+.logo img {
+    width: 250px;
+}

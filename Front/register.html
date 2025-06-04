@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link rel="shortcut icon" type="imagex/png" href="src/assets/images/LogoWW-SearchBar.ico">
+    <link rel="stylesheet" href="src/css/pages/register/register.css">
+    <script src="https://kit.fontawesome.com/7f048de868.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--tela de carregamento da página-->
+    <div id="preloader">
+        <img src="src/assets/images/LogoWH.png" alt="">
+    </div>
+
+
+
+
+    <!--Topo do site-->
+    <div class="header">
+
+        <h1>Cadastre-se</h1>
+
+    </div>
+
+    <!--Container para armazenar o formulario-->
+    <div class="container">
+
+        <h2>Conte mais sobre você</h2>
+
+        <div class="form-register">
+
+            <form id="register-form" method="post" action="/register" autocomplete="on">
+
+                <!-- Divs para controlar os inputs -->
+                <div class="form-control">
+
+                    <!-- Input para Nome -->
+                    <label for="nome"></label>
+                    <input id="nome" name="nome" type="text" placeholder="Nome Completo">
+                    <i></i>
+                    <i></i>
+                    <small id="nome-error"></small>
+
+                </div>
+
+                <div class="form-control">
+
+                    <!-- Input para Telefone -->
+                    <label for="telefone"></label>
+                    <input id="telefone" name="telefone" type="tel" placeholder="Telefone">
+                    <i></i>
+                    <i></i>
+                    <small id="tel-error"></small>
+
+                </div>
+
+                <div class="form-control">
+
+                    <!-- Input para o email -->
+                    <label for="email"></label>
+                    <input id="email" name="email" type="email" placeholder="E-mail">
+                    <i></i>
+                    <i></i>
+                    <small id="email-error"></small>
+
+                </div>
+
+                <div class="form-control">
+
+                    <!-- Input para senha -->
+                    <label for="senha"></label>
+                    <div class="input-senha">
+                        <input id="senha" class="input-password" type="password" placeholder="Senha">
+                        <i id="toggle-senha" class="fa-solid fa-eye toggle-senha input-password"
+                            style="cursor: pointer;"></i>
+                    </div>
+                    <small id="error-senha"></small>
+
+                </div>
+
+                <div class="form-control">
+
+                    <!-- Input para senha -->
+                    <label for="senha"></label>
+                    <div class="input-senha">
+                        <input id="c-senha" class="input-password" type="password" placeholder="Confirme a Senha">
+                        <i id="toggle-senha" class="fa-solid fa-eye toggle-senha input-password"
+                            style="cursor: pointer;"></i>
+                    </div>
+                    <small id="error-senha"></small>
+
+                </div>
+
+                <div class="form-control">
+
+                    <!-- Input para CPF e CNPJ -->
+                    <label for="cnpj-cpf"></label>
+                    <input id="cnpj-cpf" name="cnpj-cpf" type="text" placeholder="CNPJ/CPF">
+                    <i></i>
+                    <i></i>
+                    <small id="cnpj-cpf-error"></small>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!--rodapé do site com botão-->
+    <div class="footer">
+        <div class="btn-footer">
+            <button class="btn-register" id="btn-registrar" type="button">
+                Registrar
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+    <script type="module" src="src/js/pages/register/register.js"></script>
+</body>
+
+</html>
